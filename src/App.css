@@ -1,0 +1,148 @@
+/* ===== Base Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* ===== Layout ===== */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.navbar button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===== Forms ===== */
+.form-box {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-box button:hover {
+  background: #1d4ed8;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin: 15px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+th, td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:disabled {
+  background: #cbd5e1 !important;
+  cursor: not-allowed;
+}
+
+.btn-primary { background: #2563eb; color: white; }
+.btn-danger  { background: #dc2626; color: white; }
+.btn-success { background: #16a34a; color: white; }
+
+/* ===== Error / Success ===== */
+.error {
+  color: #dc2626;
+  font-size: 14px;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.success {
+  color: #16a34a;
+  font-size: 14px;
+  margin: 8px 0;
+  text-align: center;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+  color: #111827;
+}
